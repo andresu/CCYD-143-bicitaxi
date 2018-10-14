@@ -7,7 +7,3 @@
 ###### **2** - Cada uno de los desarrolladores tiene su propia rama, de manera que cada uno podrá solicitar un pull request a la rama **DEV**, para que sus cambios queden en **DEV**.
 
 ###### **3** - La rama **DEV**, será la inmmediatamente previa a producción y en la rama **MASTER**, solo deberá estar lo que se deba ver en producción. Para que los cambios lleguen hasta **MASTER**, se deberá solicitar un pull request al profesor Esteban.
-
-
-
-
