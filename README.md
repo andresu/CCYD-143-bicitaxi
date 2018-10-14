@@ -3,8 +3,6 @@
 Proyecto para el curso de FEDESOFT.
 
   - Fredy Vargas
-  - Maria Fernanda
-  - Andres
   - Victor
   - Andres Urrea
  
