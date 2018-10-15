@@ -1,4 +1,4 @@
-###Instrucciones para hacer commits
+### Instrucciones para hacer commits
 
 ###### **1** - Verificar que cada commit lo estén haciendo después de haber hecho el registro de su **SSH** desde el equipo. Es decir que el repositorio deberá clonarse a través de **SSH** y no de ~~HTTPS~~
 
