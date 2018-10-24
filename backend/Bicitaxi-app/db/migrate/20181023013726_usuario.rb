@@ -1,7 +1,7 @@
 class Usuario < ActiveRecord::Migration[5.2]
   def change
     create_table :usuario do |t|
-        t.integer :id
+        t.integer :id_usuario
         t.text :nombres
         t.text :apellidos
         t.text :cc
