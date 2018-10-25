@@ -1,0 +1,2 @@
+class UsuarioZona < ApplicationRecord
+end

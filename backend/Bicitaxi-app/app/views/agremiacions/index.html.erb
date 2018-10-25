@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Agremiacions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id agremiacion</th>
+      <th>Nombre agremiacion</th>
+      <th>Telefono</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @agremiacions.each do |agremiacion| %>
+      <tr>
+        <td><%= agremiacion.id_agremiacion %></td>
+        <td><%= agremiacion.nombre_agremiacion %></td>
+        <td><%= agremiacion.telefono %></td>
+        <td><%= agremiacion.email %></td>
+        <td><%= link_to 'Show', agremiacion %></td>
+        <td><%= link_to 'Edit', edit_agremiacion_path(agremiacion) %></td>
+        <td><%= link_to 'Destroy', agremiacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Agremiacion', new_agremiacion_path %>

@@ -1,0 +1,47 @@
+<%= form_with(model: viaje, local: true) do |form| %>
+  <% if viaje.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(viaje.errors.count, "error") %> prohibited this viaje from being saved:</h2>
+
+      <ul>
+      <% viaje.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_viaje %>
+    <%= form.number_field :id_viaje %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor %>
+    <%= form.number_field :valor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usuario_solicitante %>
+    <%= form.number_field :usuario_solicitante %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usuario_bicitaxista %>
+    <%= form.number_field :usuario_bicitaxista %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_viaje %>
+    <%= form.date_select :fecha_viaje %>
+  </div>
+
+  <div class="field">
+    <%= form.label :puntaje %>
+    <%= form.number_field :puntaje %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

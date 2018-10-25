@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id agremiacion:</strong>
+  <%= @agremiacion.id_agremiacion %>
+</p>
+
+<p>
+  <strong>Nombre agremiacion:</strong>
+  <%= @agremiacion.nombre_agremiacion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @agremiacion.telefono %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @agremiacion.email %>
+</p>
+
+<%= link_to 'Edit', edit_agremiacion_path(@agremiacion) %> |
+<%= link_to 'Back', agremiacions_path %>

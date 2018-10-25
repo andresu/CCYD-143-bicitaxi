@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_agremiacion: 1
+  nombre_agremiacion: MyString
+  telefono: MyString
+  email: MyString
+
+two:
+  id_agremiacion: 1
+  nombre_agremiacion: MyString
+  telefono: MyString
+  email: MyString

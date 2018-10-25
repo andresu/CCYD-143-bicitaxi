@@ -1,0 +1,2 @@
+class ZonaLocalidad < ApplicationRecord
+end

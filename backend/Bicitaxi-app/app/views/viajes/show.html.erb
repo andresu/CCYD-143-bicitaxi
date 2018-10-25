@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id viaje:</strong>
+  <%= @viaje.id_viaje %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @viaje.valor %>
+</p>
+
+<p>
+  <strong>Usuario solicitante:</strong>
+  <%= @viaje.usuario_solicitante %>
+</p>
+
+<p>
+  <strong>Usuario bicitaxista:</strong>
+  <%= @viaje.usuario_bicitaxista %>
+</p>
+
+<p>
+  <strong>Fecha viaje:</strong>
+  <%= @viaje.fecha_viaje %>
+</p>
+
+<p>
+  <strong>Puntaje:</strong>
+  <%= @viaje.puntaje %>
+</p>
+
+<%= link_to 'Edit', edit_viaje_path(@viaje) %> |
+<%= link_to 'Back', viajes_path %>

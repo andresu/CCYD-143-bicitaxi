@@ -1,0 +1,32 @@
+<%= form_with(model: usuario_zona, local: true) do |form| %>
+  <% if usuario_zona.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usuario_zona.errors.count, "error") %> prohibited this usuario_zona from being saved:</h2>
+
+      <ul>
+      <% usuario_zona.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_usuario_zona %>
+    <%= form.number_field :id_usuario_zona %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_usuario %>
+    <%= form.number_field :id_usuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :localidad_zona %>
+    <%= form.text_area :localidad_zona %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_zona_localidad: 1
+  zona: MyText
+  localidad: MyText
+
+two:
+  id_zona_localidad: 1
+  zona: MyText
+  localidad: MyText
