@@ -1,0 +1,2 @@
+class Agremiacion < ApplicationRecord
+end

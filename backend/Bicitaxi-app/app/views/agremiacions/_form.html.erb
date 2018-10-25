@@ -1,0 +1,37 @@
+<%= form_with(model: agremiacion, local: true) do |form| %>
+  <% if agremiacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(agremiacion.errors.count, "error") %> prohibited this agremiacion from being saved:</h2>
+
+      <ul>
+      <% agremiacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_agremiacion %>
+    <%= form.number_field :id_agremiacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nombre_agremiacion %>
+    <%= form.text_field :nombre_agremiacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefono %>
+    <%= form.text_field :telefono %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

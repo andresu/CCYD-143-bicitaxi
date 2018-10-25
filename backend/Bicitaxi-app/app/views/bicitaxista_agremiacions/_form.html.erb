@@ -1,0 +1,32 @@
+<%= form_with(model: bicitaxista_agremiacion, local: true) do |form| %>
+  <% if bicitaxista_agremiacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bicitaxista_agremiacion.errors.count, "error") %> prohibited this bicitaxista_agremiacion from being saved:</h2>
+
+      <ul>
+      <% bicitaxista_agremiacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_bicitaxista_agremiacion %>
+    <%= form.number_field :id_bicitaxista_agremiacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_usuario %>
+    <%= form.number_field :id_usuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_agremiacion %>
+    <%= form.number_field :id_agremiacion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_viaje: 1
+  valor: 1
+  usuario_solicitante: 1
+  usuario_bicitaxista: 1
+  fecha_viaje: 2018-10-24
+  puntaje: 1
+
+two:
+  id_viaje: 1
+  valor: 1
+  usuario_solicitante: 1
+  usuario_bicitaxista: 1
+  fecha_viaje: 2018-10-24
+  puntaje: 1

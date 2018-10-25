@@ -1,0 +1,2 @@
+class BicitaxistaAgremiacion < ApplicationRecord
+end

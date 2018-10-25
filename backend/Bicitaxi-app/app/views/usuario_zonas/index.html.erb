@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usuario Zonas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id usuario zona</th>
+      <th>Id usuario</th>
+      <th>Localidad zona</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuario_zonas.each do |usuario_zona| %>
+      <tr>
+        <td><%= usuario_zona.id_usuario_zona %></td>
+        <td><%= usuario_zona.id_usuario %></td>
+        <td><%= usuario_zona.localidad_zona %></td>
+        <td><%= link_to 'Show', usuario_zona %></td>
+        <td><%= link_to 'Edit', edit_usuario_zona_path(usuario_zona) %></td>
+        <td><%= link_to 'Destroy', usuario_zona, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario Zona', new_usuario_zona_path %>

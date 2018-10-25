@@ -1,0 +1,2 @@
+module BicitaxistaAgremiacionsHelper
+end

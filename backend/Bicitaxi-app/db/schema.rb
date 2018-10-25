@@ -10,10 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_25_013600) do
+ActiveRecord::Schema.define(version: 2018_10_25_020321) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "agremiacions", force: :cascade do |t|
+    t.integer "id_agremiacion"
+    t.string "nombre_agremiacion"
+    t.string "telefono"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "bicitaxista_agremiacions", force: :cascade do |t|
+    t.integer "id_bicitaxista_agremiacion"
+    t.integer "id_usuario"
+    t.integer "id_agremiacion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "usuario_zonas", force: :cascade do |t|
+    t.integer "id_usuario_zona"
+    t.integer "id_usuario"
+    t.text "localidad_zona"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "usuarios", force: :cascade do |t|
     t.integer "id_usuario"
@@ -28,6 +53,25 @@ ActiveRecord::Schema.define(version: 2018_10_25_013600) do
     t.date "fecha_nacimiento"
     t.string "horario"
     t.string "numero_vehiculo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "viajes", force: :cascade do |t|
+    t.integer "id_viaje"
+    t.integer "valor"
+    t.integer "usuario_solicitante"
+    t.integer "usuario_bicitaxista"
+    t.date "fecha_viaje"
+    t.integer "puntaje"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "zona_localidads", force: :cascade do |t|
+    t.integer "id_zona_localidad"
+    t.text "zona"
+    t.text "localidad"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

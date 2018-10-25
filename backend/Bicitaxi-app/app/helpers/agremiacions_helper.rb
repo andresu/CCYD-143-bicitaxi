@@ -1,0 +1,2 @@
+module AgremiacionsHelper
+end

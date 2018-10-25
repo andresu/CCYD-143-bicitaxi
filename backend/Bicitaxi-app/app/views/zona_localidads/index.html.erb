@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Zona Localidads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id zona localidad</th>
+      <th>Zona</th>
+      <th>Localidad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zona_localidads.each do |zona_localidad| %>
+      <tr>
+        <td><%= zona_localidad.id_zona_localidad %></td>
+        <td><%= zona_localidad.zona %></td>
+        <td><%= zona_localidad.localidad %></td>
+        <td><%= link_to 'Show', zona_localidad %></td>
+        <td><%= link_to 'Edit', edit_zona_localidad_path(zona_localidad) %></td>
+        <td><%= link_to 'Destroy', zona_localidad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zona Localidad', new_zona_localidad_path %>
