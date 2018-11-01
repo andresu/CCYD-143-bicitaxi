@@ -25,4 +25,7 @@ test:
 
 production:
   <<: *default
-  database: bicitaxi_app_pros
+  database: d6k16ra3shv1nk
+  host: ec2-54-83-49-109.compute-1.amazonaws.com
+  username: zpxjezgtnwmobc
+  password: 988372240a757f1a8fcb121d5fcf23822cce9e14f2c1b06f9e7ce76cbb906043
