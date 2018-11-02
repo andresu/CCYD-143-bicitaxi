@@ -21,6 +21,7 @@ export class RegisterBicitaxistaPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterBicitaxistaPage');
   }
+  /*
   slides = [
     {
       title: "Welcome to the Docs!",
@@ -38,5 +39,6 @@ export class RegisterBicitaxistaPage {
       image: "assets/img/ica-slidebox-img-3.png",
     }
   ];
+  */
 
 }
