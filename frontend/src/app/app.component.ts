@@ -2,8 +2,14 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+//import { TabsPage_Bicitaxista } from '../pages/tabs-bicitaxista/tabs-bicitaxista';
+//import { TabsPage_Usuario } from '../pages/tabs-usuario/tabs-usuario';
 
 import { LoginPage } from '../pages/login/login';
+//import { RegistroPage } from "../pages/registro/registro";
+
+//import { TarifasPage } from "../pages/tarifas/tarifas";
+//import { ViajesPage_Usuario } from "../pages/viajes-usuario/viajes-usuario";
 
 @Component({
   templateUrl: 'app.html'
