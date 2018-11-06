@@ -1,0 +1,19 @@
+page-tarifas {
+    ion-header{
+        background-color: color($colors, primary);
+    }
+    .advertencia{
+        ion-icon {
+            display: inline-block;
+            padding-right:1.5rem; 
+            vertical-align: middle;
+        }
+        p{
+            color: map-get($colors, naranja);
+            display: inline-block;
+            vertical-align: middle;
+            width: 80%;
+        }
+    }
+    
+}

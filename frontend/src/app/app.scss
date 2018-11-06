@@ -14,3 +14,119 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+/* sizes */
+.box-size{
+    display: block;
+    left: 5%;
+    position: relative;
+    width: 90%;
+}
+
+/*helpers*/
+.text-right{
+    text-align: right;
+}
+
+.margin{
+    margin:2rem 0;
+}
+.margin-h{
+    margin:0 2rem;
+}
+.margin-top{
+    margin-top: 2rem;
+}
+.margin-top-25{
+    margin-top: 2.5rem;
+}
+.margin-bottom{
+    margin-bottom: 2rem;
+}
+.no-margin{
+    margin:0;
+}
+.padding-v{
+    padding:3rem 0;
+}
+
+/* styles shared */
+ion-header .saludo{
+    color:map-get($colors,verdeoscuro);
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    position: relative;
+    text-align: right;
+}
+ion-header .usuario{
+    color:map-get($colors,secondary);
+    text-transform: uppercase;
+}
+.title-page{
+    color:map-get($colors,primary);
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+}
+.title-section-registry{
+    color:map-get($colors,verdeoscuro);
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*buttons */
+.main-button{
+    color:map-get($colors, verdeoscuro);  
+}
+.button{
+    height: 6rem;
+    font-weight:700; 
+}
+
+/* inputs */
+ion-input[type="text"],
+ion-input[type="password"],
+ion-datetime{
+    border-bottom:1px solid map-get($colors, primary);
+    color:map-get($colors, primary);
+}
+ion-input.input.input-md{
+    color:map-get($colors, primary);
+}
+
+.select .select-icon .select-icon-inner{
+    color:map-get($colors, primary);
+}
+.label, 
+.label-ios{
+    color:map-get($colors, primary); 
+}
+
+table{
+    background-color:map-get($colors, grisclaro);
+    border-radius: 5%;
+    box-shadow:0px 0px 2px map-get($colors, grisclaromedio);
+    text-align: center;
+    width: 100%;
+    th,td{
+        padding: 2rem;
+    }
+    thead{ 
+        background-color:map-get($colors, verdeclaro); 
+        border-radius: 10% !important;    
+        th{
+            color:map-get($colors, verdeoscuro);
+            font-weight: 700;
+        }
+    }
+}
+
+/* ajustes styles */
+.list-ios > .item-block:first-child,
+.list-ios > .item-block:last-child{
+    border:none;
+}
+.list-ios .item-block .item-inner,
+.item-ios.item-block .item-inner{
+    border:none;
+}

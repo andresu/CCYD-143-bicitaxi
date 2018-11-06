@@ -1,3 +1,21 @@
 page-login {
-
+    .head{
+        background-color: map-get($colors, primary);
+        height:120px;
+    }
+    .logosimbolo{
+        background-color: white;
+        border-radius: 50%;
+        box-shadow:0px 0px 2px map-get($colors, grisoscuromedio);
+        display: block;
+        height: 100px;
+        //left:50%;
+        margin:0 auto;
+        position: relative;
+        top:60px;
+        width: 100px;
+    }
+    .title-page{
+        margin:7rem 0 5rem 0;
+    }
 }

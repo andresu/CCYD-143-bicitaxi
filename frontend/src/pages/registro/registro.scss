@@ -1,0 +1,13 @@
+page-registro {
+ .seleccion-rol{
+     background-color:map-get($colors,secondary) ;
+ }
+ button.swiper-pagination-bullet{
+     background-color: rgba(0,0,0,0);
+     border:2px solid map-get($colors, verdeoscuro);
+     opacity:1;
+ }
+ button.swiper-pagination-bullet-active{
+    background-color:map-get($colors, verdeoscuro);
+ }
+}

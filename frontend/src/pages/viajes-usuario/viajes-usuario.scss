@@ -1,0 +1,11 @@
+page-viajes-usuario {
+    ion-header{
+        background-color: color($colors, primary);
+    }
+    h2{
+        color:map-get($colors,primary);
+        display: block;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
