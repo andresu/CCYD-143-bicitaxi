@@ -20,6 +20,22 @@ import { GastosPage } from "../pages/gastos/gastos";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+/* conecction with firebase */
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AuthProvider } from '../providers/auth/auth';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyB0JoiEDdXMTNv4CBHGVc5ZNT-S87E8PB0",
+  authDomain: "bicitaxi-986ac.firebaseapp.com",
+  databaseURL: "https://bicitaxi-986ac.firebaseio.com",
+  projectId: "bicitaxi-986ac",
+  storageBucket: "bicitaxi-986ac.appspot.com",
+  messagingSenderId: "143978806090"
+};
+/* coneection with firebase */
+
 @NgModule({
   declarations: [
     MyApp,
@@ -38,7 +54,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -59,9 +78,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthProvider
   ]
 })
 export class AppModule {}
-
-GananciasPage
