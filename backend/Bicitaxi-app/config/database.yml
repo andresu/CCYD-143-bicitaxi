@@ -10,7 +10,7 @@ default: &default
   
   pool: 5
   username: postgres
-  password: ccyd
+  password: 123456
 
 development:
   <<: *default
