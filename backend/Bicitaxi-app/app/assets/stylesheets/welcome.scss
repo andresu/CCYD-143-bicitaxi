@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400,500,500i,700,900');
 @import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
 /* reset */
 html{
     box-sizing: border-box;
@@ -51,7 +52,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-  
+
+
+
+
+
 /* landing */
 body {
     display: flex;
@@ -63,38 +68,36 @@ a {
     text-decoration: none;
 }
 
+
 /* color section */
 .home, 
 .contact {
-    background: rgb(255,50,50); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255,50,50,1) 0%, rgba(255,0,4,1) 52%, rgba(249,108,0,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,50,50,1) 0%,rgba(255,0,4,1) 52%,rgba(249,108,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,50,50,1) 0%,rgba(255,0,4,1) 52%,rgba(249,108,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#f96c00',GradientType=1 ); /* IE6-9 */
+    background-color: #43a047;
 }
 .how{
     background-color: #F1F1F1;
 }
 
+
+
+
 /* font */
 h2{ 
-    color:rgba(255,50,50,1);
+    color:#43a047;
     font-size:2rem;
     font-weight: bold;
     text-align: center;
 }
 
+
+
+
 /* icons */
-.icon{  
+.fas{  
     color:#FFF;
 }
-.features .icon{
-    background: rgb(255,50,50); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255,50,50,1) 0%, rgba(255,0,4,1) 52%, rgba(249,108,0,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,50,50,1) 0%,rgba(255,0,4,1) 52%,rgba(249,108,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,50,50,1) 0%,rgba(255,0,4,1) 52%,rgba(249,108,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#f96c00',GradientType=1 ); /* IE6-9 */
-    
+.features .fas{
+    background-color: #43a047;
     border-radius: 50%;
     color:#FFF;
     font-size: 3rem;
@@ -102,6 +105,10 @@ h2{
     padding: 2rem;
     width: 50px;
 }
+
+
+
+
 
 /* home */
 header{
@@ -115,13 +122,16 @@ header h1{
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
-    width: 20%;
 }
-.applogo{
+/*.applogo{
     background-color: red;
     display: inline-block;
     height: 2rem;
     width: 6rem;
+}*/
+.marca span{
+    color:#c6ff00;
+    font-weight: 400;
 }
 h1 span{
     font-style: italic;
@@ -151,6 +161,8 @@ nav ul li a:link, nav ul li a:visited{
 nav ul li a:hover{
     font-weight:700;
 }
+
+
 
 /* banner */
 .download{
@@ -186,9 +198,9 @@ nav ul li a:hover{
 .wrapperbuttons{
     margin: 1.5rem 0 0 5rem;
 }
-.button{
+.button, .menu-button{
     border:1px solid #FFF;
-    border-radius: .3rem;
+    border-radius: 2rem;
     background-color: rgba(0,0,0,0);
     color:#FFF;
     font-weight: bold;
@@ -196,9 +208,14 @@ nav ul li a:hover{
     text-transform: uppercase;
 }
 .main-action{
-    background-color: orange;
+    background-color: #c6ff00;
     border:none;
     color:#1f1f1f;
+}
+.menu-button{
+    border:none;
+    padding:1rem;
+    text-decoration: underline;
 }
 
 /* features */
@@ -217,7 +234,7 @@ nav ul li a:hover{
 }
 
 .feature h3{
-    color:#4C4C4C;
+    color:#0a240a;
     font-size: 1.2rem;
     font-weight:900;
     margin: 4rem 0 1rem 0;
@@ -274,7 +291,6 @@ nav ul li a:hover{
     color:#FFF;
     font-size: 1rem;
     margin: 0 0 .5rem 0;
-    text-transform: uppercase;  
 }
 .contact .contact-ways, 
 .contact-ways > ul {
@@ -299,4 +315,57 @@ nav ul li a:hover{
 
 
 
+@media screen and (min-width:320px) and (max-width:1024px){
+    .wit-30, .wit-50, .wit-70{
+        display: block;
+        width:100%;  
+    }
+    header{
+        justify-content: space-between;
+    }
+    .download h3,
+    .download p,
+    .download .wrapperbuttons{
+        margin: 0.5rem 0 0 0;
+        padding:1rem 0;
+    }
+    .button{
+        min-width:220px;
+    }
+    .wrapperbuttons .button{
+        display: inline-block;
+        margin:0 0 1.5rem 0;
+    }
+    .features article{
+        display: flex;
+        flex-direction: column;
+    }
+    .features .feature{
+        padding: 0 0 5rem 0;
+        width:100%;
+    }
+    .contact h3{
+        font-size:2rem;
+        text-align: center;
+    }
+    .contact .contact-ways{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact .contact-ways ul{
+        justify-content: center;
+        padding: 1.5rem 0;
+        width:100%;
+    }
+    .contact-ways li{
+        margin: 0 2rem;
+    }
+    .contact-ways li .fab{
+        font-size: 2rem;
+    }
+    
+
+}
 
