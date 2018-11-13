@@ -9,6 +9,9 @@
 html{
     box-sizing: border-box;
 }
+/*html *{
+    box-sizing: border-box;
+}*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,9 +57,6 @@ table {
 }
 
 
-
-
-
 /* landing */
 body {
     display: flex;
@@ -68,7 +68,6 @@ a {
     text-decoration: none;
 }
 
-
 /* color section */
 .home, 
 .contact {
@@ -79,8 +78,6 @@ a {
 }
 
 
-
-
 /* font */
 h2{ 
     color:#43a047;
@@ -88,8 +85,6 @@ h2{
     font-weight: bold;
     text-align: center;
 }
-
-
 
 
 /* icons */
@@ -106,29 +101,26 @@ h2{
     width: 50px;
 }
 
-
-
-
-
 /* home */
 header{
+    align-items: center;
+    background-color: #43a047;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: center;
     height: 4rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: fixed;
     width: 100%;  
+    z-index: 9;
 }
 header h1{
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
 }
-/*.applogo{
-    background-color: red;
-    display: inline-block;
-    height: 2rem;
-    width: 6rem;
-}*/
+
 .marca span{
     color:#c6ff00;
     font-weight: 400;
@@ -142,14 +134,14 @@ header h1 a, header h1 a:link, header h1 a:visited, header h1 a:hover {
     text-decoration: none;
 }
 header nav{
-    width: 80%;
+    width: 70%;
 }
 
 nav ul {
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-    margin: 0 0 0 30rem;
+    //margin: 0 0 0 30rem;
 }
 nav ul li a{
     color:white;
@@ -161,8 +153,6 @@ nav ul li a:link, nav ul li a:visited{
 nav ul li a:hover{
     font-weight:700;
 }
-
-
 
 /* banner */
 .download{
@@ -193,6 +183,7 @@ nav ul li a:hover{
     right: 0;
     display: block;
     margin: 0 auto;
+    max-width: 100%;
     text-align: right;
 }
 .wrapperbuttons{
@@ -257,13 +248,11 @@ nav ul li a:hover{
 .wit-70{
     width: 70%;
 }
-
 .how ol li{
     color: gray;
     padding: 2rem;
     vertical-align: middle;
 }
-
 .how ol i{
     border: 1px solid gray;
     border-radius: 50%;
@@ -275,8 +264,7 @@ nav ul li a:hover{
     padding: 0.5rem;
     text-align: center;
     vertical-align: middle;
-    width: 30px;
-    
+    width: 30px;  
 }
 
 /* contact */
@@ -294,6 +282,7 @@ nav ul li a:hover{
 }
 .contact .contact-ways, 
 .contact-ways > ul {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -301,8 +290,8 @@ nav ul li a:hover{
 .contact-ways li {
     margin: 0 5rem 0 0;
 }
-.contact-ways .icon{
-    font-size: 1.5rem;
+.contact-ways .fab{
+    font-size: 2rem;
 }
 
 /* helpers */
@@ -312,8 +301,12 @@ nav ul li a:hover{
 .margin-top-4rem{
     margin-top:4rem;
 }
-
-
+.menu-button{
+    display: none;
+}
+.no-padding{
+    padding: 0;
+}
 
 @media screen and (min-width:320px) and (max-width:1024px){
     .wit-30, .wit-50, .wit-70{
@@ -321,6 +314,7 @@ nav ul li a:hover{
         width:100%;  
     }
     header{
+        background-color: rgba(19, 71, 19, 0.8);
         justify-content: space-between;
     }
     .download h3,
@@ -365,7 +359,32 @@ nav ul li a:hover{
     .contact-ways li .fab{
         font-size: 2rem;
     }
-    
+    .menu{
+        display:none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .mobile{
+        background-color: rgba(19,71,19,0.8);
+        display: block;  
+        left: -2rem;
+        position: absolute;
+        top: 4rem;
+        width: calc(100% + 4rem);
+        z-index: 9;
+    }
+    .mobile ul{
+        display:block;
+        margin:0;
+        text-align:center;
+        width:100%;
+        li{
+            display: block;
+            padding: 2rem 0;
+
+        }
+    }
 
 }
 

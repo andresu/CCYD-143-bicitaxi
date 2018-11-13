@@ -1,13 +1,11 @@
-<section id="home" class="content home">
-        <header>
+<header>
             <h1 class="marca">
                 <a href="#">
                     Mi Bicitaxi <span>app</span>
                 </a>
             </h1>
-            <button class="menu-button">Menu</button>
-            <!--
-            <nav>
+            <button class="menu-button" id="menu-button">Menu</button>
+            <nav class="menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#características">Características</a></li>
@@ -16,8 +14,10 @@
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-            -->
+            
         </header>
+<section id="home" class="content home">
+        
         <article class="download">
           <section class="wit-70"> 
             <h3>Accede a miles de usuarios</h3>
@@ -41,25 +41,27 @@
         </h2>
         <article class="margin-top-4rem">
             <section class="feature">
-                <i class="fas fa-pen"></i>
+                
+                    <i class="fas fa-pen"></i>
+           
                 <h3>
                     Registrate y consigue más clientes
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis aliquet nisi, eget viverra massa. </p>
+                <p>Tendrás la posibilidad como Bicitaxista de acceder a todos nuestros usuarios que día a día necesitan un servicio de bicitaxi.</p>
             </section>
             <section  class="feature">
                 <i class="fas fa-user"></i>
                 <h3>
                     Pide tu servicio fácil y seguro
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis aliquet nisi, eget viverra massa. </p>
+                <p>Contarás con la seguridad que te brinda saber el nombre de quien te transporta y un sistema de puntos que te da información sobre como otros usuarios han calificado a tu Bicitaxista.</p>
             </section>
             <section class="feature">
                 <i class="fas fa-map-marker-alt"></i>
                 <h3>
                     Consulta las rutas de servicio más cercanas
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis aliquet nisi, eget viverra massa. </p>
+                <p>De forma fácil accedes a las rutas más cercanas y los bicitaxistas que suelen cubrir estos recorridos.</p>
             </section>
         </article>
     </section>
@@ -70,11 +72,11 @@
         <article class="margin-top-4rem">
           <img src="" alt="" class="wit-50">
           <ol class="wit-50">
-              <li><i>1</i> Registrate de manera agíl a travéz de nuestra aplicación</li>
+              <li><i>1</i> Registrate de manera agíl</li>
               <li><i>2</i> Accede a la tus posibles usuarios</li>
               <li><i>3</i> Acepta el servicio</li>
               <li><i>4</i> Amplia tu rango de clientes potenciales</li>
-              <li><i>5</i> Genera más ingresos</li>
+              <li><i>5</i> Aumenta tus ingresos</li>
           </ol>
         </article>
     </section>
@@ -94,4 +96,9 @@
             </ul>
         </article>
     </section>
-    
+
+<script>
+  $('#menu-button').on('click', function() {
+    $('.menu').toggleClass( "mobile" );
+  });
+</script>
