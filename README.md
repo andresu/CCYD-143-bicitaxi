@@ -2,8 +2,7 @@
 
 Proyecto para el curso de FEDESOFT.
 
-  - Fredy Vargas
-  - Victor
+  - Victor Tovar
   - Andres Urrea
  
 ### Problematica
