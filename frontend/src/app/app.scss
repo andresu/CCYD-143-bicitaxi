@@ -1,0 +1,181 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+body{
+    box-sizing: border-box;
+}
+
+/* sizes */
+.box-size{
+    display: block;
+    left: 5%;
+    position: relative;
+    width: 90%;
+}
+
+/*helpers*/
+.text-right{
+    text-align: right;
+}
+
+.margin{
+    margin:2rem 0;
+}
+.margin-h{
+    margin:0 2rem;
+}
+.margin-top{
+    margin-top: 2rem;
+}
+.margin-top-25{
+    margin-top: 2.5rem;
+}
+.margin-bottom{
+    margin-bottom: 2rem;
+}
+.no-margin{
+    margin:0;
+}
+.padding-v{
+    padding:3rem 0;
+}
+
+/* styles shared */
+ion-header .saludo{
+    color:map-get($colors,verdeoscuro);
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    position: relative;
+    text-align: right;
+}
+ion-header .usuario{
+    color:map-get($colors,secondary);
+    text-transform: uppercase;
+}
+.title-page{
+    color:map-get($colors,primary);
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+}
+.title-section-registry{
+    color:map-get($colors,verdeoscuro);
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*buttons */
+.main-button{
+    color:map-get($colors, verdeoscuro);  
+}
+.button{
+    height: 6rem;
+    font-weight:700; 
+}
+
+/* inputs */
+ion-input[type="text"],
+ion-input[type="password"],
+ion-datetime{
+    border-bottom:1px solid map-get($colors, primary);
+    color:map-get($colors, primary);
+}
+ion-input.input.input-md{
+    color:map-get($colors, primary);
+}
+
+.select .select-icon .select-icon-inner{
+    color:map-get($colors, primary);
+}
+.label, 
+.label-ios{
+    color:map-get($colors, primary); 
+}
+
+table{
+    background-color:map-get($colors, grisclaro);
+    border-radius: 5%;
+    box-shadow:0px 0px 2px map-get($colors, grisclaromedio);
+    text-align: center;
+    width: 100%;
+    th,td{
+        padding: 2rem;
+    }
+    thead{ 
+        background-color:map-get($colors, verdeclaro); 
+        border-radius: 10% !important;    
+        th{
+            color:map-get($colors, verdeoscuro);
+            font-weight: 700;
+        }
+    }
+}
+
+.icon-user-viaje{
+  display:inline-block;
+  margin:0 2rem;
+  text-align: center;
+  vertical-align: middle;
+  width: 15%;
+}
+.informacion-viaje{
+  display:inline-block;
+  vertical-align: middle;
+  width: 70%;
+  .rol{
+    color:map-get($colors,grisoscuromedio);
+  }
+  .username{
+    color:map-get($colors,primary);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: -1rem;
+  }
+  .detalles-viaje{
+    padding:1.2rem 0 0 0;
+    font-size: 1.5rem;
+    width:100%;
+    .valor{
+        color:map-get($colors,naranja);
+        font-weight: 700;
+        display:inline-block;
+        vertical-align: middle;
+    }
+    .fecha-viaje{
+        display:inline-block;
+        position: relative;
+        right: 0;
+        text-align: right;
+        vertical-align: middle;
+    }
+  }
+   
+}
+
+/* ajustes styles */
+.list-ios > .item-block:first-child,
+.list-ios > .item-block:last-child{
+    border:none;
+}
+.list-ios .item-block .item-inner,
+.item-ios.item-block .item-inner{
+    border:none;
+}
+.card,
+.card-ios{
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px map-get($colors, grisclaromedio);
+}

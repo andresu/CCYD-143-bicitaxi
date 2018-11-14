@@ -1,0 +1,31 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  
+  pool: 5
+  username: postgres
+  password: 123456
+
+development:
+  <<: *default
+  database: bicitaxi_app_dev
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: bicitaxi_app_test
+
+production:
+  <<: *default
+  database: d6k16ra3shv1nk
+  host: ec2-54-83-49-109.compute-1.amazonaws.com
+  username: zpxjezgtnwmobc
+  password: 988372240a757f1a8fcb121d5fcf23822cce9e14f2c1b06f9e7ce76cbb906043

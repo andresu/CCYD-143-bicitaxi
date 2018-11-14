@@ -1,0 +1,390 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400,500,500i,700,900');
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+/* reset */
+html{
+    box-sizing: border-box;
+}
+/*html *{
+    box-sizing: border-box;
+}*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* landing */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+
+/* color section */
+.home, 
+.contact {
+    background-color: #43a047;
+}
+.how{
+    background-color: #F1F1F1;
+}
+
+
+/* font */
+h2{ 
+    color:#43a047;
+    font-size:2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* icons */
+.fas{  
+    color:#FFF;
+}
+.features .fas{
+    background-color: #43a047;
+    border-radius: 50%;
+    color:#FFF;
+    font-size: 3rem;
+    height: 50px;
+    padding: 2rem;
+    width: 50px;
+}
+
+/* home */
+header{
+    align-items: center;
+    background-color: #43a047;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;  
+    z-index: 9;
+}
+header h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.marca span{
+    color:#c6ff00;
+    font-weight: 400;
+}
+h1 span{
+    font-style: italic;
+    font-weight: 300;
+}
+header h1 a, header h1 a:link, header h1 a:visited, header h1 a:hover {
+    color:white;
+    text-decoration: none;
+}
+header nav{
+    width: 70%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    //margin: 0 0 0 30rem;
+}
+nav ul li a{
+    color:white;
+    font-size: .9rem;
+}
+nav ul li a:link, nav ul li a:visited{
+    color:white; 
+}
+nav ul li a:hover{
+    font-weight:700;
+}
+
+/* banner */
+.download{
+    align-items: center;
+    color:#FFF;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0 -2rem 0;      
+}
+.download .wit-30,
+.download .wit-70 {
+    margin:0;
+    padding: 0;
+}
+.download h3,
+.download p {
+    margin: 0.5rem 0 0 5rem;
+}
+.download h3{
+    font-size: 2.5rem;
+    font-weight: bold;   
+}
+.download img{
+    bottom: 0;
+    position: relative;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: right;
+}
+.wrapperbuttons{
+    margin: 1.5rem 0 0 5rem;
+}
+.button, .menu-button{
+    border:1px solid #FFF;
+    border-radius: 2rem;
+    background-color: rgba(0,0,0,0);
+    color:#FFF;
+    font-weight: bold;
+    padding:1rem 3rem;
+    text-transform: uppercase;
+}
+.main-action{
+    background-color: #c6ff00;
+    border:none;
+    color:#1f1f1f;
+}
+.menu-button{
+    border:none;
+    padding:1rem;
+    text-decoration: underline;
+}
+
+/* features */
+.features article, .how article {
+    display: flex;
+    flex-direction: row;
+}
+.content-features{
+    margin:4rem;
+}
+
+.feature{
+    padding: 1rem;
+    text-align: center;
+    width: calc(100%/3);
+}
+
+.feature h3{
+    color:#0a240a;
+    font-size: 1.2rem;
+    font-weight:900;
+    margin: 4rem 0 1rem 0;
+}
+.feature p{
+    margin: auto;
+    width: 80%;
+}
+
+/* how */
+.wit-30, .wit-50, .wit-70{
+    padding: 1rem;
+}
+.wit-30{
+    width: 30%;
+}
+.wit-50{
+    width: 50%;
+}
+.wit-70{
+    width: 70%;
+}
+.how ol li{
+    color: gray;
+    padding: 2rem;
+    vertical-align: middle;
+}
+.how ol i{
+    border: 1px solid gray;
+    border-radius: 50%;
+    color: gray;
+    display: inline-block;
+    font-size: 2rem;
+    height: 30px;
+    margin: 0 1.5rem 0 0;
+    padding: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;  
+}
+
+/* contact */
+.contact{
+    color:#FFF;
+}
+.contact a{
+    color:#FFF;
+    font-weight: bold;
+}
+.contact h3{
+    color:#FFF;
+    font-size: 1rem;
+    margin: 0 0 .5rem 0;
+}
+.contact .contact-ways, 
+.contact-ways > ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.contact-ways li {
+    margin: 0 5rem 0 0;
+}
+.contact-ways .fab{
+    font-size: 2rem;
+}
+
+/* helpers */
+.content{
+    padding: 2rem;
+}
+.margin-top-4rem{
+    margin-top:4rem;
+}
+.menu-button{
+    display: none;
+}
+.no-padding{
+    padding: 0;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px){
+    .wit-30, .wit-50, .wit-70{
+        display: block;
+        width:100%;  
+    }
+    header{
+        background-color: rgba(19, 71, 19, 0.8);
+        justify-content: space-between;
+    }
+    .download h3,
+    .download p,
+    .download .wrapperbuttons{
+        margin: 0.5rem 0 0 0;
+        padding:1rem 0;
+    }
+    .button{
+        min-width:220px;
+    }
+    .wrapperbuttons .button{
+        display: inline-block;
+        margin:0 0 1.5rem 0;
+    }
+    .features article{
+        display: flex;
+        flex-direction: column;
+    }
+    .features .feature{
+        padding: 0 0 5rem 0;
+        width:100%;
+    }
+    .contact h3{
+        font-size:2rem;
+        text-align: center;
+    }
+    .contact .contact-ways{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact .contact-ways ul{
+        justify-content: center;
+        padding: 1.5rem 0;
+        width:100%;
+    }
+    .contact-ways li{
+        margin: 0 2rem;
+    }
+    .contact-ways li .fab{
+        font-size: 2rem;
+    }
+    .menu{
+        display:none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .mobile{
+        background-color: rgba(19,71,19,0.8);
+        display: block;  
+        left: -2rem;
+        position: absolute;
+        top: 4rem;
+        width: calc(100% + 4rem);
+        z-index: 9;
+    }
+    .mobile ul{
+        display:block;
+        margin:0;
+        text-align:center;
+        width:100%;
+        li{
+            display: block;
+            padding: 2rem 0;
+
+        }
+    }
+
+}
+

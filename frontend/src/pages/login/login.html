@@ -1,0 +1,59 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div class="head">
+    <article class="logosimbolo"></article>
+  </div>
+  <h2 class="title-page">Bienvenido</h2>
+    <ion-list class="box-size">
+    <form>
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="text" value=""
+            [(ngModel)]="user.email"
+            name="email"
+            type="text"
+            autocapitalize="off"
+            required
+            >
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>contraseña</ion-label>
+          <ion-input type="password" value=""
+            [(ngModel)]="user.password"
+            name="password"
+            type="password"
+            required
+          >
+          </ion-input>
+      </ion-item>
+      <a href="#" class="box-size text-right padding-v">Olvidaste tu contraseña</a>
+      <div padding class="box-size wrapper-buttons">
+        <button
+          ion-button
+          class="main-button button margin"
+          color="secondary"
+          round
+          block
+          (click)="login()"
+          type="submit"
+        >
+        INGRESA</button>
+        <button
+          ion-button
+          class="button margin"
+          outline
+          round
+          block
+          (click)="signin()"
+          type="submit"
+        >
+          REGISTRATE</button>
+       </div>
+    </form>
+  </ion-list>
+
+</ion-content>
